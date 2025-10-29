@@ -13,6 +13,7 @@ import MobileAddictionDefinition from "./Components/MobileAddictionDefinition";
  
 import DonationSection from "./Components/DonationSection";
 import AboutTelefonhalsan from "./Components/AboutTelefonhalsan";
+import PartnersSection from "./Components/PartnersSection";
 
 export default function App() {
   return (
@@ -49,7 +50,7 @@ export default function App() {
   <GoalsAfterTreatment />
 </section>
 
-<section className="relative z-50">
+<section className="relative -mb-80 z-50 ">
   <MobileAddictionDefinition />
 </section>
 
@@ -60,8 +61,13 @@ export default function App() {
 <section className=" relative -mt-[500px] z-50">
   <DonationSection />
 </section>
+<section className="relative z-20">
+  <PartnersSection />
+</section>
       </main>
+
       <Footer />
+      
     </div>
   );
 }

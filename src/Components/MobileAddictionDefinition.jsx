@@ -23,14 +23,18 @@ const rightPoints = [
 
 const MobileAddictionDefinition = () => {
   return (
-    <section className="relative bg-gradient-to-b from-[#F4FFFC] to-[#E6FFF5]">
-      <div className="max-w-5xl bg-[#082B61] text-white rounded-3xl shadow-xl p-4 sm:p-6 md:p-8 border-8 border-[#1E3C91] relative">
+    <section className=" flex items-center justify-center mx-24">
+      <div className="max-w-7xl w-full bg-[#082B61] text-white shadow-xl p-4 sm:p-6 md:p-8 border-8 border-[#1E3C91] relative rounded-3xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 items-center">
           {/* Left Points */}
           <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base leading-relaxed order-1">
             {leftPoints.map((p, i) => (
               <li key={i} className="flex items-start gap-2">
-                <img src={Mask} alt="Tick" className="w-4 h-4 sm:w-5 sm:h-5 mt-1 flex-shrink-0" />
+                <img
+                  src={Mask}
+                  alt="Tick"
+                  className="w-4 h-4 sm:w-5 sm:h-5 mt-1 flex-shrink-0"
+                />
                 <span>{p}</span>
               </li>
             ))}
@@ -41,7 +45,7 @@ const MobileAddictionDefinition = () => {
             <img
               src={Isolation}
               alt="Phone addiction"
-              className="w-28 h-28 sm:w-36 sm:h-36 mb-4 object-contain"
+              className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 mb-4 object-contain"
             />
             <h2 className="text-base sm:text-lg font-semibold leading-snug">
               Definitioner av <br /> mobilberoende
@@ -52,7 +56,11 @@ const MobileAddictionDefinition = () => {
           <ul className="space-y-3 sm:space-y-4 text-sm sm:text-base leading-relaxed order-3">
             {rightPoints.map((p, i) => (
               <li key={i} className="flex items-start gap-2">
-                <img src={Mask} alt="Tick" className="w-4 h-4 sm:w-5 sm:h-5 mt-1 flex-shrink-0" />
+                <img
+                  src={Mask}
+                  alt="Tick"
+                  className="w-4 h-4 sm:w-5 sm:h-5 mt-1 flex-shrink-0"
+                />
                 <span>{p}</span>
               </li>
             ))}
